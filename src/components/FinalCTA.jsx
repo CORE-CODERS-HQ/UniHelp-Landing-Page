@@ -45,13 +45,6 @@ const FinalCTA = () => {
     console.log("Waitlist signup:", email);
     setEmail("");
   };
-
-  const benefits = [
-    { icon: Users, text: "Early access to beta features" },
-    { icon: Star, text: "Priority customer support" },
-    { icon: Zap, text: "Exclusive founding member perks" },
-  ];
-
   return (
     <section
       ref={sectionRef}
@@ -71,8 +64,8 @@ const FinalCTA = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Join the
+          <h2 className="text-3xl sm:text-2xl lg:text-6xl font-bold mb-4 leading-tight">
+            Join the 
             <br />
             <span className="bg-gradient-to-r from-yellow-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
               Movement
@@ -80,7 +73,7 @@ const FinalCTA = () => {
           </h2>
         </div>
         {/* Secondary Footer */}
-        <div className="mt-12 border-t border-white/20 pt-8">
+        <div className="mt-12 border-t border-white/20 pt-8 place-items-center">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left">
             {/* Column 1 - Brand */}
             <div>
