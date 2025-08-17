@@ -103,7 +103,7 @@ const FinalCTA = () => {
           ))}
         </div>
         {/* Waitlist form */}
-        <div
+        {/* <div
           className={`transition-all duration-1000 delay-400 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
@@ -137,7 +137,7 @@ const FinalCTA = () => {
               No spam, just updates on our launch. Unsubscribe anytime.
             </p>
           </div>
-        </div>
+        </div> */}
         {/* Secondary Footer */}
         <div className="mt-12 border-t border-white/20 pt-8">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left">

@@ -6,11 +6,13 @@ import {
   Calendar,
   Lightbulb,
   ArrowRight,
+  ChevronRight
 } from "lucide-react";
 
 const Roadmap = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+  const [email, setEmail] = useState("")
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -170,7 +172,25 @@ const Roadmap = () => {
               Your ideas matter! Join our community and help us build the
               features that will make your campus life even better.
             </p>
-
+            <form className="max-w-lg mx-auto mb-3">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email"
+                  className="flex-1 px-6 py-4 rounded-2xl bg-white/90 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-yellow-400/50 font-medium"
+                  required
+                />
+                {/* <button
+                  type="submit"
+                  className="group bg-gradient-to-r from-yellow-400 via-pink-400 to-cyan-400 text-white px-8 py-4 whitespace-nowrap rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+                >
+                  Join Waitlist
+                  <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button> */}
+              </div>
+            </form>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button className="bg-white text-purple-600 px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
                 Join Our Community

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Star, Quote } from "lucide-react";
+import StatCountItem from "./StatCountItem";
 
 const SocialProof = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -84,6 +85,24 @@ const SocialProof = () => {
       color: "from-orange-400 to-red-400",
     },
   ];
+  const stats = [
+    { id: 1, number: 100, label: "Active Students", letterf: "", letterb: "+" },
+    { id: 2, number: "1", label: "Earned by Users", letterf: "₦", letterb: "M+" },
+    { id: 3, number: "110", label: "Tasks Completed", letterf: "", letterb: "+" },
+    { id: 4, number: "98", label: "Satisfaction Rate", letterf: "", letterb: "%" },
+  ];
+  // const [count, setcount] = useState();
+
+  let count = 0
+  
+  function animatedCount(statNumber) {
+      let counter = setInterval(() => {
+        count++
+        if (count === statNumber) {
+          clearInterval(counter)
+        }
+      }, 300)
+  }
 
   return (
     <section
@@ -198,18 +217,8 @@ const SocialProof = () => {
           }`}
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { number: "100+", label: "Active Students" },
-              { number: "₦1M+", label: "Earned by Users" },
-              { number: "500+", label: "Tasks Completed" },
-              { number: "98%", label: "Satisfaction Rate" },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-gray-600">{stat.label}</div>
-              </div>
+            {stats.map((stat) => (
+              <StatCountItem key={stat.id} label={stat.label} number={stat.number} letterf={stat.letterf} letterb={stat.letterb}/>
             ))}
           </div>
         </div>
