@@ -86,23 +86,11 @@ const SocialProof = () => {
     },
   ];
   const stats = [
-    { id: 1, number: 100, label: "Active Students", letterf: "", letterb: "+" },
-    { id: 2, number: "1", label: "Earned by Users", letterf: "₦", letterb: "M+" },
-    { id: 3, number: "110", label: "Tasks Completed", letterf: "", letterb: "+" },
-    { id: 4, number: "98", label: "Satisfaction Rate", letterf: "", letterb: "%" },
+    { id: 1, number: 100, label: "Active Students", letterf: "", letterb: "+",  letterm: "", large: false },
+    { id: 2, number: 1, label: "Earned by Users", letterf: "₦", letterb: "+", letterm: "M", large: true},
+    { id: 3, number: 110, label: "Tasks Completed", letterf: "", letterb: "+" ,  letterm: "", large: false},
+    { id: 4, number: 98, label: "Satisfaction Rate", letterf: "", letterb: "%" ,  letterm: "", large: false},
   ];
-  // const [count, setcount] = useState();
-
-  let count = 0
-  
-  function animatedCount(statNumber) {
-      let counter = setInterval(() => {
-        count++
-        if (count === statNumber) {
-          clearInterval(counter)
-        }
-      }, 300)
-  }
 
   return (
     <section
@@ -132,7 +120,7 @@ const SocialProof = () => {
           </p>
 
           {/* Overall rating */}
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4 flex-wrap">
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
                 <Star
@@ -218,7 +206,7 @@ const SocialProof = () => {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat) => (
-              <StatCountItem key={stat.id} label={stat.label} number={stat.number} letterf={stat.letterf} letterb={stat.letterb}/>
+              <StatCountItem key={stat.id} label={stat.label} number={stat.number} letterf={stat.letterf} letterb={stat.letterb} large={stat.large} letterm={stat.letterm}/>
             ))}
           </div>
         </div>
