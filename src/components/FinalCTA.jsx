@@ -8,6 +8,7 @@ import {
   Twitter,
   Instagram,
   Mail,
+  Linkedin
 } from "lucide-react";
 
 const FinalCTA = () => {
@@ -132,6 +133,7 @@ const FinalCTA = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-white transition"
+                  aria-label="Twitter logo"
                 >
                   <Twitter />
                 </a>
@@ -140,6 +142,7 @@ const FinalCTA = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-white transition"
+                  aria-label="Instagram logo"
                 >
                   <Instagram />
                 </a>
@@ -148,12 +151,16 @@ const FinalCTA = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-white transition"
-                ></a>
+                  aria-label="Linkedin logo"
+                >
+                  <Linkedin/>
+                </a>
                 <a
                   href="mailto:getunihelp@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-white transition"
+                  aria-label="Gmail logo"
                 >
                   <Mail />
                 </a>
