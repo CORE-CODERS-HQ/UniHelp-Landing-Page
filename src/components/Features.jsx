@@ -229,7 +229,7 @@ const Features = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 sm:p-12 shadow-xl border border-gray-100">
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 sm:p-12 shadow-sm border border-gray-100">
             <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               Ready to Experience the Future?
             </h3>

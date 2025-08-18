@@ -17,7 +17,7 @@ export default function UniHelpLanding() {
     <div id="home" className="min-h-screen animate-gentleDrift">
       {/* Hero Section */}
       <section className="relative overflow-hidden px-4 pt-20 md:py-32">
-        <div className="absolute inset-0 bg-gradient-to-r from-violet-600/10 via-transparent to-blue-500/10" />
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-violet-600/10 via-transparent to-blue-500/10" /> */}
         {/* Animated Background Elements */}
         <div className="absolute inset-0 -z-10">
           {/* Floating Particles */}
@@ -77,7 +77,6 @@ export default function UniHelpLanding() {
                 Join the Waitlist
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-
               <Button
                 variant="outline"
                 size="xl"
@@ -89,7 +88,7 @@ export default function UniHelpLanding() {
 
             {/* Floating App Mockup */}
             <div
-              className={`m-16 mx-8 mb-8 sm:mx-0 sm:mb-0 ${
+              className={`pb-8 m-16 mx-8 mb-8 sm:mx-0 sm:mb-0 ${
                 isVisible ? "animate-scaleIn animate-delay-300" : "opacity-0"
               }`}
             >

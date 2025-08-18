@@ -33,7 +33,7 @@ const SocialProof = () => {
       quote:
         "I take coding gigs between lectures and withdraw my earnings to my bank quickly. The people are reliable and payments are clear so it has become a steady side income.",
       rating: 5,
-      color: "bg-gradient-to-r from-blue-400 to-purple-500",
+      color: "bg-gradient-to-r from-purple-500 to-blue-400",
     },
     {
       name: "Bolaji Olatunde",
@@ -44,7 +44,7 @@ const SocialProof = () => {
       quote:
         "I sold my textbooks and a printer in a week. It felt much safer than posting on WhatsApp and the buyer collected from the faculty convenience point without any problems.",
       rating: 5,
-      color: "bg-gradient-to-r from-blue-400 to-purple-500",
+      color: "bg-gradient-to-r from-purple-500 to-blue-400",
     },
     {
       name: "Habeebullah Ajibola",
@@ -55,7 +55,7 @@ const SocialProof = () => {
       quote:
         "I needed a photographer at short notice. I posted a task and someone replied within an hour. The work was great and I released payment after confirming the photos.",
       rating: 5,
-      color: "bg-gradient-to-r from-blue-400 to-purple-500",
+      color: "bg-gradient-to-r from-purple-500 to-blue-400",
     },
 
     {
@@ -67,7 +67,7 @@ const SocialProof = () => {
       quote:
         "I sold spare parts and started getting repair jobs from classmates. The verification badge helped build trust and brought repeat customers.",
       rating: 5,
-      color: "bg-gradient-to-r from-blue-400 to-purple-500",
+      color: "bg-gradient-to-r from-purple-500 to-blue-400",
     },
     {
       name: "Ifeoma E.",
@@ -78,7 +78,7 @@ const SocialProof = () => {
       quote:
         "I get steady poster and flyer commissions from campus clubs. The Talent section helped me turn my design skills into real bookings.",
       rating: 5,
-      color: "bg-gradient-to-r from-blue-400 to-purple-500",
+      color: "bg-gradient-to-r from-purple-500 to-blue-400",
     },
 
     {
@@ -90,7 +90,7 @@ const SocialProof = () => {
       quote:
         "I posted a task to get groceries and for a quick room clean. I paid into escrow and released payment after the job. It was smooth fair and stress free.",
       rating: 5,
-      color: "bg-gradient-to-r from-blue-400 to-purple-500",
+      color: "bg-gradient-to-r from-purple-500 to-blue-400",
     },
   ];
 
