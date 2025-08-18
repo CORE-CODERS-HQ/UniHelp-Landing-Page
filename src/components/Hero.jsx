@@ -16,7 +16,7 @@ export default function UniHelpLanding() {
   return (
     <div id="home" className="h-[45vh] lg:h-screen animate-gentleDrift">
       {/* Hero Section */}
-      <section className="relative overflow-hidden px-4 pt-20 md:py-32">
+      <section className="flex flex-col justify-center relative overflow-hidden px-4 pt-20 md:py-32">
         {/* <div className="absolute inset-0 bg-gradient-to-r from-violet-600/10 via-transparent to-blue-500/10" /> */}
         {/* Animated Background Elements */}
         <div className="absolute inset-0 -z-10">
