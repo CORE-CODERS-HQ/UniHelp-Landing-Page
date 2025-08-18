@@ -19,7 +19,7 @@ export default function UniHelpLanding() {
       {/* Hero Section */}
       <section
         style={{
-          backgroundImage: "/unihelp-background.jpeg",
+          backgroundImage: "url('/unihelp-background.jpeg')",
           backgroundPosition: "center",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
