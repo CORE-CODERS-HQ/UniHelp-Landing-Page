@@ -49,12 +49,12 @@ const FinalCTA = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700 text-white relative rounded-t-2xl"
+      className="py-8 px-4 sm:px-6 lg:px-8 bg-purple-700 text-white relative rounded-t-2xl"
     >
       <div className="max-w-4xl mx-auto relative z-10 text-center">
         {/* Header */}
         <div
-          className={`relative -top-20 -rotate-6 md:-rotate-12 w-max px-12 py-2 z-auto bg-gradient-to-bl from-purple-600 via-teal-600 to-blue-600 border-gray-200 border-8 mx-auto transition-all duration-1000 ${
+          className={`relative -top-20 -rotate-6 md:-rotate-12 w-max px-12 py-2 z-auto bg-gradient-to-bl from-purple-500 via-teal-600 to-blue-600 border-gray-200 border-8 mx-auto transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >

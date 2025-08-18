@@ -28,35 +28,35 @@ const Problem = () => {
       title: "Missed DMs & Lost Sales",
       description:
         "Important messages buried in group chats, opportunities slipping through the cracks",
-      color: "bg-purple-600",
+      color: "bg-purple-500",
     },
     {
       icon: ShieldX,
       title: "Untrustworthy Sellers",
       description:
         "No way to verify seller credibility, leading to scams and disappointed buyers",
-      color: "bg-purple-600",
+      color: "bg-purple-500",
     },
     {
       icon: Clock,
       title: "Unreliable Help",
       description:
         "Students promising help but failing to deliver when you need it most",
-      color: "bg-purple-600",
+      color: "bg-purple-500",
     },
     {
       icon: EyeOff,
       title: "Unnoticed Talents",
       description:
         "Skilled students struggling to showcase their abilities and find paying clients",
-      color: "bg-purple-600",
+      color: "bg-purple-500",
     },
     {
       icon: Users,
       title: "Poor Campus Connections",
       description:
         "Fragmented communication across multiple platforms, missing out on opportunities",
-      color: "bg-purple-600",
+      color: "bg-purple-500",
     },
   ];
 
@@ -85,7 +85,7 @@ const Problem = () => {
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Why{" "}
-            <span className="bg-gradient-to-r from-purple-600 to-teal-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-500 to-teal-600 bg-clip-text text-transparent">
               UniHelp?
             </span>
           </h2>
@@ -116,7 +116,7 @@ const Problem = () => {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-purple-500 transition-colors">
                   {problem.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -135,7 +135,7 @@ const Problem = () => {
         >
           <p className="text-2xl font-semibold text-gray-900 mb-4">
             Sound familiar?{" "}
-            <span className="text-purple-600">You're not alone.</span>
+            <span className="text-purple-500">You're not alone.</span>
           </p>
           <p className="text-lg text-gray-600">
             Join thousands of students who are ready for a better solution.

@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md border-b border-violet-100">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img
@@ -61,7 +61,7 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       {open && (
-        <div className="md:hidden flex flex-col items-center bg-white/95 backdrop-blur-md border-t border-violet-100 px-6 py-4 my-2 space-y-4">
+        <div className="md:hidden flex flex-col items-center bg-white/95 backdrop-blur-md border-t border-violet-100 px-6 py-2 my-2 space-y-4">
           <a
             href="#home"
             className="block text-gray-700 hover:text-violet-600 text-center w-full"

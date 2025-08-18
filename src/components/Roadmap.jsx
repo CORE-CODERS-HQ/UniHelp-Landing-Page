@@ -40,7 +40,7 @@ const Roadmap = () => {
       description:
         "Real-time messaging with and file sharing for tasks, marketplace, and talent hub. AI helps you complete purchase when you are away for some time",
       status: "Coming Q4 2025",
-      color: "from-purple-500 to-pink-500",
+      color: "bg-purple-500",
     },
     {
       icon: BadgeCheck,
@@ -48,7 +48,7 @@ const Roadmap = () => {
       description:
         "Optional ID verification for trusted helpers, sellers, and talents on campus.",
       status: "Planned 2026",
-      color: "from-indigo-500 to-blue-600",
+      color: "bg-blue-600",
     },
     {
       icon: Shield,
@@ -56,7 +56,7 @@ const Roadmap = () => {
       description:
         "Safe in-app payments with deposits, withdrawals, and purchase protection.",
       status: "Planned 2026",
-      color: "from-orange-500 to-red-500",
+      color: "bg-purple-500",
     },
 
     {
@@ -65,7 +65,7 @@ const Roadmap = () => {
       description:
         "Discover and promote events, group activities, and social gatherings around campus.",
       status: "Coming Q1 2026",
-      color: "from-green-500 to-teal-500",
+      color: "bg-blue-600",
     },
   ];
 
@@ -87,7 +87,7 @@ const Roadmap = () => {
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             We're Just{" "}
-            <span className="bg-gradient-to-r from-purple-600 to-teal-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-500 to-teal-600 bg-clip-text text-transparent">
               Getting Started
             </span>
           </h2>
@@ -122,7 +122,7 @@ const Roadmap = () => {
                 >
                   {/* Timeline dot */}
                   <div
-                    className={`hidden sm:block absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 w-8 h-8 bg-gradient-to-r ${item.color} rounded-full border-4 border-white shadow-lg z-10`}
+                    className={`hidden sm:block absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 w-8 h-8 ${item.color} rounded-full border-4 border-white shadow-lg z-10`}
                   ></div>
 
                   {/* Content card */}
@@ -133,12 +133,12 @@ const Roadmap = () => {
                   >
                     <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 group border border-gray-100">
                       <div
-                        className={`w-16 h-16 bg-gradient-to-r ${item.color} rounded-2xl p-4 mb-6 group-hover:scale-110 transition-transform duration-300`}
+                        className={`w-16 h-16 ${item.color} rounded-2xl p-4 mb-6 group-hover:scale-110 transition-transform duration-300`}
                       >
                         <item.icon className="w-full h-full text-white" />
                       </div>
 
-                      <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-500 transition-colors">
                         {item.title}
                       </h3>
 
@@ -168,7 +168,7 @@ const Roadmap = () => {
         >
           <div
             id="join-waitlist"
-            className="bg-gradient-to-r from-purple-600 via-teal-600 to-blue-600 rounded-3xl p-8 sm:p-12 text-white text-center"
+            className="bg-gradient-to-r from-purple-500 via-teal-600 to-blue-600 rounded-3xl p-8 sm:p-12 text-white text-center"
           >
             <div className="w-16 h-16 bg-white/20 rounded-2xl p-4 mx-auto mb-6">
               <Lightbulb className="w-full h-full text-white" />
@@ -194,7 +194,7 @@ const Roadmap = () => {
                 />
                 <button
                   type="submit"
-                  className="absolute right-0 group bg-purple-600 text-white px-4 h-full whitespace-nowrap rounded-2xl font-semibold text-base shadow-lg hover:shadow-xl transform hover:scale-90 hover:translate-x-1 transition-all duration-300 flex items-center justify-center gap-2"
+                  className="absolute right-0 group bg-purple-500 text-white px-4 h-full whitespace-nowrap rounded-2xl font-semibold text-base shadow-lg hover:shadow-xl transform hover:scale-90 hover:translate-x-1 transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   Join Waitlist
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -202,7 +202,7 @@ const Roadmap = () => {
               </div>
             </form>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="bg-white text-purple-600 px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
+              <button className="bg-white text-purple-500 px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
                 Join Our Community
                 <ArrowRight className="w-5 h-5" />
               </button>

@@ -115,7 +115,7 @@ const Features = () => {
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Our 3{" "}
-            <span className="bg-gradient-to-r from-purple-600 via-teal-600 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-500 via-teal-600 to-blue-600 bg-clip-text text-transparent">
               Superpowers
             </span>
           </h2>
@@ -162,7 +162,7 @@ const Features = () => {
                       {feature.subtitle}
                     </h3>
 
-                    <p className="text-xl text-gray-600 leading-relaxed">
+                    <p className="text-xl text-gray-600 leading-relaxed mb-4">
                       {feature.description}
                     </p>
                   </div>
@@ -237,7 +237,7 @@ const Features = () => {
               Join our waitlist and be among the first students to revolutionize
               their campus experience.
             </p>
-            <button className="bg-purple-600 text-white px-10 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+            <button className="bg-purple-500 text-white px-10 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
               Get Early Access
             </button>
           </div>
