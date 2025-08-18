@@ -63,6 +63,7 @@ const Problem = () => {
   return (
     <section
       ref={sectionRef}
+      id="features"
       className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
     >
       {/* Background pattern */}
@@ -106,10 +107,10 @@ const Problem = () => {
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 border border-gray-100">
+              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-lg transition-all duration-500 group-hover:translate-y-4 border border-gray-100">
                 {/* Icon */}
                 <div
-                  className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${problem.color} p-4 mb-6 group-hover:scale-110 transition-transform duration-300`}
+                  className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${problem.color} p-4 mb-6 transition-transform duration-300`}
                 >
                   <problem.icon className="w-full h-full text-white" />
                 </div>

@@ -40,7 +40,7 @@ UniHelp is designed to solve real student problems: finding reliable help, showc
 ## 📁 Project Structure
 
 ```
-├── public/                # Static assets (favicon, etc.)
+├── public/                # Static assets (logo, etc.)
 ├── src/
 │   ├── assets/            # Images, SVGs
 │   ├── components/        # React components (Hero, Features, etc.)

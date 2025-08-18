@@ -88,6 +88,7 @@ const SocialProof = () => {
   return (
     <section
       ref={sectionRef}
+      id="contact"
       className="py-20 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden"
     >
       {/* Background decoration */}

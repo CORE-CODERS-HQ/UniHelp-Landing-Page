@@ -6,6 +6,8 @@ import {
   Calendar,
   Lightbulb,
   ArrowRight,
+  BadgeCheck,
+  Shield,
 } from "lucide-react";
 
 const Roadmap = () => {
@@ -31,33 +33,35 @@ const Roadmap = () => {
 
   const roadmapItems = [
     {
+      icon: BadgeCheck,
+      title: "Verified Profiles",
+      description:
+        "Optional ID verification for trusted helpers, sellers, and talents on campus.",
+      status: "Planned 2026",
+      color: "from-indigo-500 to-blue-600",
+    },
+    {
+      icon: Shield,
+      title: "Secure Wallet & Payments",
+      description:
+        "Safe in-app payments with deposits, withdrawals, and purchase protection.",
+      status: "Planned 2026",
+      color: "from-orange-500 to-red-500",
+    },
+    {
       icon: MessageSquare,
-      title: "Live Chat Integration",
-      description: "Real-time messaging with video calls and file sharing",
-      status: "Coming Q2 2025",
+      title: "Live Chat & Calls",
+      description:
+        "Real-time messaging with video calls and file sharing for tasks, marketplace, and talent hub.",
+      status: "Coming Q4 2025",
       color: "from-purple-500 to-pink-500",
     },
     {
-      icon: Search,
-      title: "Advanced Search & Filters",
-      description: "AI-powered search to find exactly what you need instantly",
-      status: "Coming Q3 2025",
-      color: "from-teal-500 to-blue-500",
-    },
-    {
-      icon: Zap,
-      title: "Smart AI Matching",
-      description:
-        "Intelligent recommendations based on your preferences and history",
-      status: "Coming Q3 2025",
-      color: "from-blue-500 to-purple-500",
-    },
-    {
       icon: Calendar,
-      title: "Campus Events Integration",
+      title: "Campus Events",
       description:
-        "Discover and promote events, study groups, and social gatherings",
-      status: "Coming Q4 2025",
+        "Discover and promote events, group activities, and social gatherings around campus.",
+      status: "Coming Q1 2026",
       color: "from-green-500 to-teal-500",
     },
   ];
@@ -93,13 +97,15 @@ const Roadmap = () => {
         {/* Roadmap timeline */}
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-px h-full w-0.5 bg-gradient-to-b from-purple-400 via-teal-400 to-blue-400"></div>
+          <div className="hidden sm:block absolute left-4 sm:left-1/2 transform sm:-translate-x-px h-full w-0.5 bg-gradient-to-b from-purple-400 via-teal-400 to-blue-400"></div>
 
-          <div className="space-y-12">
+          <div className="space-y-4 sm:-space-y-24 md:-space-y-12">
             {roadmapItems.map((item, index) => (
               <div
                 key={index}
-                className={`relative transition-all duration-1000 ${
+                className={`relative transition-all duration-1000 top-[-calc(${
+                  index * 24
+                }px)] ${
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-8"
@@ -108,19 +114,19 @@ const Roadmap = () => {
               >
                 <div
                   className={`flex items-center gap-8 ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                    index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
                   }`}
                 >
                   {/* Timeline dot */}
                   <div
-                    className={`absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-gradient-to-r ${item.color} rounded-full border-4 border-white shadow-lg z-10`}
+                    className={`hidden sm:block absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 w-8 h-8 bg-gradient-to-r ${item.color} rounded-full border-4 border-white shadow-lg z-10`}
                   ></div>
 
                   {/* Content card */}
                   <div
-                    className={`w-full md:w-5/12 ${
-                      index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
-                    } ml-16 md:ml-0`}
+                    className={`w-full sm:w-5/12 ${
+                      index % 2 === 0 ? "sm:ml-auto" : "sm:mr-auto"
+                    }`}
                   >
                     <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 group border border-gray-100">
                       <div
@@ -157,7 +163,10 @@ const Roadmap = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <div className="bg-gradient-to-r from-purple-600 via-teal-600 to-blue-600 rounded-3xl p-8 sm:p-12 text-white text-center">
+          <div
+            id="join-waitlist"
+            className="bg-gradient-to-r from-purple-600 via-teal-600 to-blue-600 rounded-3xl p-8 sm:p-12 text-white text-center"
+          >
             <div className="w-16 h-16 bg-white/20 rounded-2xl p-4 mx-auto mb-6">
               <Lightbulb className="w-full h-full text-white" />
             </div>

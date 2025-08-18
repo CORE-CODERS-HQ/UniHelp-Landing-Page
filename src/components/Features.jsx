@@ -1,14 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
   CheckCircle,
-  User,
   ShoppingBag,
-  MessageCircle,
+  User,
   Star,
-  Shield,
-  Zap,
-  Clock,
+  Users,
+  BookOpen,
+  FileText,
+  Laptop,
+  Truck,
+  BadgeCheck,
+  Calendar,
   DollarSign,
+  Utensils,
+  BrushCleaning,
+  Tag,
 } from "lucide-react";
 
 const Features = () => {
@@ -36,49 +42,47 @@ const Features = () => {
   const features = [
     {
       title: "Task Services",
-      subtitle: "Get Things Done, Effortlessly",
+      subtitle: "Campus Errands, Simplified",
       description:
-        "From assignments to errands, connect with reliable peer helpers in seconds.",
+        "Need help with hostel chores, buying food from the cafeteria, or a quick campus run? Find reliable peers to handle it for you.",
       color: "from-purple-600 to-purple-400",
       icon: CheckCircle,
       benefits: [
         {
-          icon: MessageCircle,
-          text: "Auto-replies keep conversations flowing",
+          icon: BrushCleaning,
+          text: "Get help with hostel cleaning & small chores",
         },
-        { icon: User, text: "Detailed helper profiles and portfolios" },
-        { icon: Star, text: "Rating system ensures quality service" },
+        { icon: Utensils, text: "Ask someone to buy meals or snacks for you" },
+        { icon: Users, text: "Connect with peers who are nearby & available" },
       ],
       mockup: "Task",
     },
     {
       title: "Campus Marketplace",
-      subtitle: "Buy, Sell, Trade - All in One Place",
+      subtitle: "Buy, Sell & Swap with Ease",
       description:
-        "From textbooks to tech gadgets, discover the best deals from fellow students.",
+        "Trade everything students actually need — from textbooks to hostel items, affordable gadgets, and even cafeteria coupons.",
       color: "from-teal-600 to-teal-400",
       icon: ShoppingBag,
       benefits: [
-        { icon: Clock, text: "Lightning-fast listing creation" },
-        { icon: Shield, text: "Secure payments protect all transactions" },
-        { icon: CheckCircle, text: "Local delivery options for convenience" },
+        { icon: Laptop, text: "Buy & sell a wide range of items on campus" },
+        { icon: Tag, text: "Affordable second-hand deals and fresh listings" },
+        { icon: Truck, text: "Meetup points & in-campus delivery options" },
       ],
+
       mockup: "Market",
     },
     {
       title: "Talent Hub",
-      subtitle: "Showcase Your Skills, Earn Real Money",
+      subtitle: "Turn Your Skills into Opportunities",
       description:
-        "Whether you're a designer, tutor, or developer - get discovered and get paid.",
+        "Whether you tutor, design, code, braid hair, or play instruments — showcase your skills and earn from fellow students on campus.",
       color: "from-blue-600 to-blue-400",
       icon: User,
       benefits: [
-        { icon: Shield, text: "Verified badges build instant credibility" },
-        { icon: Zap, text: "Easy booking and secure payment processing" },
-        {
-          icon: DollarSign,
-          text: "Set your rates and manage clients seamlessly",
-        },
+        { icon: BadgeCheck, text: "Verified profiles build trust instantly" },
+        { icon: Calendar, text: "Book services easily within the app" },
+        { icon: DollarSign, text: "Campus-friendly payment options" },
       ],
       mockup: "Talent",
     },
@@ -95,6 +99,7 @@ const Features = () => {
   return (
     <section
       ref={sectionRef}
+      id="about"
       className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden"
     >
       {/* Background decoration */}
@@ -232,7 +237,7 @@ const Features = () => {
               Join our waitlist and be among the first students to revolutionize
               their campus experience.
             </p>
-            <button className="bg-gradient-to-r from-purple-600 via-teal-600 to-blue-600 text-white px-10 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+            <button className="bg-purple-600 text-white px-10 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
               Get Early Access
             </button>
           </div>

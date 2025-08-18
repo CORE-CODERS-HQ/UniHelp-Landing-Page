@@ -13,7 +13,10 @@ export default function UniHelpLanding() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50 animate-gentleDrift">
+    <div
+      id="home"
+      className="min-h-screen bg-gradient-to-tl from-purple-300 via-white to-blue-50 animate-gentleDrift"
+    >
       {/* Hero Section */}
       <section className="relative overflow-hidden px-4 py-20 md:py-32">
         <div className="absolute inset-0 bg-gradient-to-r from-violet-600/10 via-transparent to-blue-500/10" />
@@ -21,7 +24,7 @@ export default function UniHelpLanding() {
         <div className="relative mx-auto max-w-7xl">
           <div className="text-center">
             <div className={`${isVisible ? "animate-fadeInUp" : "opacity-0"}`}>
-              <Badge className="mb-6 bg-violet-100 text-violet-700 hover:bg-violet-200">
+              <Badge className="mb-6 text-lg bg-violet-100 text-violet-700 hover:bg-violet-200">
                 Built for Students, By Students
               </Badge>
 
@@ -44,7 +47,7 @@ export default function UniHelpLanding() {
               }`}
             >
               <Button
-                size="lg"
+                size="xl"
                 className="gradient-purple-blue text-white hover:scale-105 transition-transform duration-200 px-8 py-3 text-lg font-semibold"
               >
                 Join the Waitlist
@@ -53,7 +56,7 @@ export default function UniHelpLanding() {
 
               <Button
                 variant="outline"
-                size="lg"
+                size="xl"
                 className="border-violet-200 text-violet-700 hover:bg-violet-50 px-8 py-3 text-lg bg-transparent"
               >
                 See How It Works
