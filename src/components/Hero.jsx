@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
-import backgroundImage from "../assets/unihelp-background.webp";
+import backgroundImage from "../assets/unihelp-background.jpeg";
 
 import { Users, Zap, ShoppingCart, ArrowRight } from "lucide-react";
 
@@ -15,17 +15,18 @@ export default function UniHelpLanding() {
 
   // bg-gradient-to-tl from-purple-300 via-white to-blue-50
   return (
-    <div
-      id="home"
-      className="min-h-screen animate-gentleDrift"
-      style={{
-        backgroundImage: `url("${backgroundImage}")`,
-        backgroundPosition: "center",
-      }}
-    >
+    <div id="home" className="min-h-screen animate-gentleDrift">
       {/* Hero Section */}
-      <section className="relative overflow-hidden px-4 py-20 md:py-32">
-        <div className="absolute inset-0 bg-gradient-to-r from-violet-600/10 via-transparent to-blue-500/10" />
+      <section
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundPosition: "center",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+        className="relative overflow-hidden px-4 py-20 md:py-32"
+      >
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-violet-600/10 via-transparent to-blue-500/10" /> */}
 
         <div className="relative mx-auto max-w-7xl">
           <div className="text-center">
