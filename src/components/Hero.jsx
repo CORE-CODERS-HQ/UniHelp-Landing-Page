@@ -21,7 +21,7 @@ export default function UniHelpLanding() {
         style={{
           backgroundImage: "url('/unihelp-background.jpeg')",
           backgroundPosition: "center",
-          backgroundSize: "contain",
+          backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
         className="relative overflow-hidden px-4 py-20 md:py-32"
