@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
-// import backgroundImage from "../assets/unihelp-background.jpeg";
 
 import { Users, Zap, ShoppingCart, ArrowRight } from "lucide-react";
 
@@ -17,18 +16,36 @@ export default function UniHelpLanding() {
   return (
     <div id="home" className="min-h-screen animate-gentleDrift">
       {/* Hero Section */}
-      <section
-        style={{
-          backgroundImage: "url('/unihelp-background.jpeg')",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-        className="relative overflow-hidden px-4 py-20 md:py-32"
-      >
-        {/* <div className="absolute inset-0 bg-gradient-to-r from-violet-600/10 via-transparent to-blue-500/10" /> */}
+      <section className="relative overflow-hidden px-4 pt-20 md:py-32">
+        <div className="absolute inset-0 bg-gradient-to-r from-violet-600/10 via-transparent to-blue-500/10" />
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 -z-10">
+          {/* Floating Particles */}
+          <div className="absolute top-10 left-10 h-24 w-24 rounded-full bg-violet-600 opacity-30 blur-xl" />
+          <div
+            className="absolute bottom-20 right-20 h-32 w-32 rounded-full bg-teal-400 opacity-30 blur-2xl"
+            style={{ animationDelay: "2s" }}
+          />
+          <div
+            className="absolute top-1/3 left-1/4 h-16 w-16 rounded-full bg-blue-400 opacity-40 blur-lg"
+            style={{ animationDelay: "4s" }}
+          />
 
-        <div className="relative mx-auto max-w-7xl">
+          {/* SVG Waves */}
+          <svg
+            className="absolute bottom-0 left-0 w-full h-64 opacity-20"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+          >
+            <path
+              fill="#ffffff"
+              fillOpacity="1"
+              d="M0,224L48,213.3C96,203,192,181,288,154.7C384,128,480,96,576,96C672,96,768,128,864,160C960,192,1056,224,1152,213.3C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+
+        <div className="relative mx-auto pt-20 max-w-7xl">
           <div className="text-center">
             <div className={`${isVisible ? "animate-fadeInUp" : "opacity-0"}`}>
               <Badge className="mb-6 text-lg bg-violet-100 text-violet-700 hover:bg-violet-200">
