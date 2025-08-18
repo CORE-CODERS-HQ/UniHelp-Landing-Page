@@ -168,7 +168,7 @@ const Features = () => {
                   </div>
 
                   {/* Benefits */}
-                  <div className="space-y-4">
+                  <div className="space-y-4 mt-4">
                     {feature.benefits.map((benefit, benefitIndex) => (
                       <div
                         key={benefitIndex}

@@ -89,7 +89,7 @@ export default function UniHelpLanding() {
 
             {/* Floating App Mockup */}
             <div
-              className={`mt-16 ${
+              className={`m-16 mx-8 mb-8 sm:mx-0 sm:mb-0 ${
                 isVisible ? "animate-scaleIn animate-delay-300" : "opacity-0"
               }`}
             >

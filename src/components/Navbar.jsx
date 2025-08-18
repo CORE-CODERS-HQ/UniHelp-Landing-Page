@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
-import uniHelpLogo from "../assets/logo.webp";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -11,7 +9,11 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="/logo.webp" alt="UniHelp Logo" className="h-14 w-auto" />
+          <img
+            src="/logo.webp"
+            alt="UniHelp Logo"
+            className="h-11 sm:h-14 w-auto"
+          />
         </div>
 
         {/* Desktop Nav */}
@@ -59,33 +61,30 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       {open && (
-        <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-violet-100 px-6 py-4 space-y-4">
-          <a href="#home" className="block text-gray-700 hover:text-violet-600">
+        <div className="md:hidden flex flex-col items-center bg-white/95 backdrop-blur-md border-t border-violet-100 px-6 py-4 my-2 space-y-4">
+          <a
+            href="#home"
+            className="block text-gray-700 hover:text-violet-600 text-center w-full"
+          >
             Home
           </a>
           <a
             href="#features"
-            className="block text-gray-700 hover:text-violet-600"
+            className="block text-gray-700 hover:text-violet-600 text-center w-full"
           >
             Features
           </a>
           <a
             href="#about"
-            className="block text-gray-700 hover:text-violet-600"
+            className="block text-gray-700 hover:text-violet-600 text-center w-full"
           >
             About
           </a>
           <a
             href="#contact"
-            className="block text-gray-700 hover:text-violet-600"
+            className="block text-gray-700 hover:text-violet-600 text-center w-full"
           >
             Contact
-          </a>
-          <a
-            href="#join-waitlist"
-            className="w-full gradient-purple-blue text-white px-5 py-2 rounded-xl shadow"
-          >
-            Join Waitlist
           </a>
         </div>
       )}
