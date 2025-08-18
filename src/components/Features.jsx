@@ -138,13 +138,13 @@ const Features = () => {
               style={{ transitionDelay: `${index * 200}ms` }}
             >
               <div
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center${
                   index % 2 === 1 ? "lg:grid-flow-dense" : ""
                 }`}
               >
                 {/* Content */}
                 <div
-                  className={`space-y-8 ${
+                  className={`space-y-8${
                     index % 2 === 1 ? "lg:col-start-2" : ""
                   }`}
                 >

@@ -8,11 +8,13 @@ import {
   ArrowRight,
   BadgeCheck,
   Shield,
+  ChevronRight,
 } from "lucide-react";
 
 const Roadmap = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+  const [email, setEmail] = useState("");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -33,6 +35,14 @@ const Roadmap = () => {
 
   const roadmapItems = [
     {
+      icon: MessageSquare,
+      title: "In app Messaging & AI assistance",
+      description:
+        "Real-time messaging with and file sharing for tasks, marketplace, and talent hub. AI helps you complete purchase when you are away for some time",
+      status: "Coming Q4 2025",
+      color: "from-purple-500 to-pink-500",
+    },
+    {
       icon: BadgeCheck,
       title: "Verified Profiles",
       description:
@@ -48,14 +58,7 @@ const Roadmap = () => {
       status: "Planned 2026",
       color: "from-orange-500 to-red-500",
     },
-    {
-      icon: MessageSquare,
-      title: "Live Chat & Calls",
-      description:
-        "Real-time messaging with video calls and file sharing for tasks, marketplace, and talent hub.",
-      status: "Coming Q4 2025",
-      color: "from-purple-500 to-pink-500",
-    },
+
     {
       icon: Calendar,
       title: "Campus Events",
@@ -69,7 +72,7 @@ const Roadmap = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
+      className="py-20 pb-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-100/30 to-transparent rounded-full blur-3xl"></div>
@@ -99,7 +102,7 @@ const Roadmap = () => {
           {/* Timeline line */}
           <div className="hidden sm:block absolute left-4 sm:left-1/2 transform sm:-translate-x-px h-full w-0.5 bg-gradient-to-b from-purple-400 via-teal-400 to-blue-400"></div>
 
-          <div className="space-y-4 sm:-space-y-24 md:-space-y-12">
+          <div className="space-y-4 sm:-space-y-24">
             {roadmapItems.map((item, index) => (
               <div
                 key={index}
@@ -179,15 +182,29 @@ const Roadmap = () => {
               Your ideas matter! Join our community and help us build the
               features that will make your campus life even better.
             </p>
-
+            <form className="max-w-lg mx-auto mb-3">
+              <div className="relative flex flex-col sm:flex-row gap-4">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email"
+                  className="flex-1 px-6 py-4 rounded-2xl bg-white/90 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-purple-400/50 font-medium"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="absolute right-0 group bg-purple-600 text-white px-4 h-full whitespace-nowrap rounded-2xl font-semibold text-base shadow-lg hover:shadow-xl transform hover:scale-90 hover:translate-x-1 transition-all duration-300 flex items-center justify-center gap-2"
+                >
+                  Join Waitlist
+                  <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
+            </form>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button className="bg-white text-purple-600 px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
                 Join Our Community
                 <ArrowRight className="w-5 h-5" />
-              </button>
-
-              <button className="border-2 border-white/30 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white/10 transition-all duration-300">
-                Share Your Ideas
               </button>
             </div>
           </div>

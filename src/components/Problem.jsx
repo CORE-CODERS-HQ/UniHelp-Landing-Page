@@ -28,35 +28,35 @@ const Problem = () => {
       title: "Missed DMs & Lost Sales",
       description:
         "Important messages buried in group chats, opportunities slipping through the cracks",
-      color: "from-red-400 to-pink-400",
+      color: "bg-purple-600",
     },
     {
       icon: ShieldX,
       title: "Untrustworthy Sellers",
       description:
         "No way to verify seller credibility, leading to scams and disappointed buyers",
-      color: "from-orange-400 to-red-400",
+      color: "bg-purple-600",
     },
     {
       icon: Clock,
       title: "Unreliable Help",
       description:
         "Students promising help but failing to deliver when you need it most",
-      color: "from-yellow-400 to-orange-400",
+      color: "bg-purple-600",
     },
     {
       icon: EyeOff,
       title: "Unnoticed Talents",
       description:
         "Skilled students struggling to showcase their abilities and find paying clients",
-      color: "from-purple-400 to-pink-400",
+      color: "bg-purple-600",
     },
     {
       icon: Users,
       title: "Poor Campus Connections",
       description:
         "Fragmented communication across multiple platforms, missing out on opportunities",
-      color: "from-blue-400 to-purple-400",
+      color: "bg-purple-600",
     },
   ];
 
@@ -110,7 +110,7 @@ const Problem = () => {
               <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-lg transition-all duration-500 group-hover:translate-y-4 border border-gray-100">
                 {/* Icon */}
                 <div
-                  className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${problem.color} p-4 mb-6 transition-transform duration-300`}
+                  className={`w-12 h-12 rounded-2xl ${problem.color} p-3 mb-6 transition-transform duration-300`}
                 >
                   <problem.icon className="w-full h-full text-white" />
                 </div>

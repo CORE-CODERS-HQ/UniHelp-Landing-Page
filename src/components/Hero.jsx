@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
+import backgroundImage from "../assets/unihelp-background.webp";
 
 import { Users, Zap, ShoppingCart, ArrowRight } from "lucide-react";
 
@@ -12,10 +13,15 @@ export default function UniHelpLanding() {
     setIsVisible(true);
   }, []);
 
+  // bg-gradient-to-tl from-purple-300 via-white to-blue-50
   return (
     <div
       id="home"
-      className="min-h-screen bg-gradient-to-tl from-purple-300 via-white to-blue-50 animate-gentleDrift"
+      className="min-h-screen animate-gentleDrift"
+      style={{
+        backgroundImage: `url("${backgroundImage}")`,
+        backgroundPosition: "center",
+      }}
     >
       {/* Hero Section */}
       <section className="relative overflow-hidden px-4 py-20 md:py-32">

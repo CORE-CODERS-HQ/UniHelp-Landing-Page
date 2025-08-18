@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="/logo.webp" alt="UniHelp Logo" className="h-10 w-auto" />
+          <img src="/logo.webp" alt="UniHelp Logo" className="h-14 w-auto" />
         </div>
 
         {/* Desktop Nav */}
