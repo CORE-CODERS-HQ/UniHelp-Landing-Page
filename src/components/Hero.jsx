@@ -19,22 +19,22 @@ export default function UniHelpLanding() {
         {/* Animated Background Elements */}
         <div className="absolute inset-0 -z-10">
           {/* Floating Particles */}
-          <div className="absolute top-20 left-30 h-24 w-24 rounded-full bg-blue-400 opacity-30 blur-xl" />
+          <div className="hidden md:block absolute top-20 left-30 h-24 w-24 rounded-full bg-blue-400 opacity-30 blur-xl" />
           <div
-            className="absolute bottom-20 right-20 h-32 w-32 rounded-full bg-teal-400 opacity-30 blur-2xl"
+            className="hidden md:block absolute bottom-20 right-20 h-32 w-32 rounded-full bg-teal-400 opacity-30 blur-2xl"
             style={{ animationDelay: "2s" }}
           />
           <div
             className="absolute top-[15%] left-1/2 -translate-x-1/2 h-100 w-100 rounded-full bg-violet-600 opacity-40 blur-lg"
             style={{ animationDelay: "4s" }}
           />
-          <div className="absolute top-3/4 left-10 h-24 w-24 rounded-full bg-teal-400 opacity-30 blur-xl" />
+          <div className="hidden md:block absolute top-3/4 left-10 h-24 w-24 rounded-full bg-teal-400 opacity-30 blur-xl" />
           <div
-            className="absolute bottom-45 right-[45%] h-32 w-32 rounded-full bg-blue-400  opacity-30 blur-2xl"
+            className="hidden md:block absolute bottom-45 right-[45%] h-32 w-32 rounded-full bg-blue-400  opacity-30 blur-2xl"
             style={{ animationDelay: "2s" }}
           />
           <div
-            className="absolute top-20 left-3/4 -translate-x-1/2 h-16 w-16 rounded-full bg-violet-600 opacity-40 blur-lg"
+            className="hidden md:block absolute top-20 left-3/4 -translate-x-1/2 h-16 w-16 rounded-full bg-violet-600 opacity-40 blur-lg"
             style={{ animationDelay: "4s" }}
           />
 
