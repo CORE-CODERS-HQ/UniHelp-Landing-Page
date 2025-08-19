@@ -8,13 +8,13 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md border-b border-violet-100">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
         {/* Logo */}
-        <div className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <img
             src="/logo.webp"
             alt="UniHelp Logo"
             className="h-11 sm:h-14 w-auto"
           />
-        </div>
+        </a>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
