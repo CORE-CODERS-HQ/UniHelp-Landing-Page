@@ -61,7 +61,7 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       {open && (
-        <div className="md:hidden flex flex-col items-center bg-white/95 backdrop-blur-md border-t border-violet-100 px-6 py-2 my-2 space-y-4">
+        <div className="md:hidden flex flex-col items-center border-y-2 border-violet-100 px-6 pt-2 pb-4 space-y-4">
           <a
             href="#home"
             className="block text-gray-700 hover:text-violet-600 text-center w-full"
