@@ -18,10 +18,12 @@ export default function StatCountItem({
       (entries) => {
         if (entries[0].isIntersecting) {
           setCount(large == true ? 100 : 0); // reset counter each time it enters
-          setStart(true); // trigger animation
-        } else {
-          setStart(false); // stop if it leaves
-        }
+          setStart(true); 
+          observer.disconnect()
+        } 
+        // else {
+        //   setStart(false); // stop if it leaves
+        // }
       },
       { threshold: 0.3 }
     );
@@ -43,13 +45,13 @@ export default function StatCountItem({
         if (prev < number && !large) {
           return prev + 1;
         } else if (large && prev < 1000000) {
-          return prev + 2000;
+          return prev + 2200;
         } else {
           return prev;
         }
       });
 
-      let delay = large ? 1 : 47;
+      let delay = large ? 1 : 23;
 
       timer = setTimeout(tick, delay);
     }
