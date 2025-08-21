@@ -15,31 +15,33 @@ const Faq = () => {
   const Faqs = [
     {
       id: 1,
-      question: "How do I reset my password?",
+      question: "What is UniHelp?",
       answer:
-        "Go to the account settings page, click 'Reset Password', and follow the instructions sent to your email.",
-      category: "Account",
+        "UniHelp is a platform designed to connect students with resources, communities, and opportunities to make university life easier and more productive.",
     },
     {
       id: 2,
-      question: "Can I use the app offline?",
+      question: "Is UniHelp free to use?",
       answer:
-        "Yes, some features work offline. However, syncing your data requires an internet connection.",
-      category: "Usage",
+        "Yes, UniHelp offers free access to core features. We also plan to roll out premium features for extra benefits in the future.",
     },
     {
       id: 3,
-      question: "What payment methods do you accept?",
+      question: "Can I access UniHelp on mobile?",
       answer:
-        "We accept credit/debit cards, PayPal, and bank transfers depending on your region.",
-      category: "Billing",
+        "Absolutely. UniHelp is built to work seamlessly on both desktop and mobile devices, and we are working on a dedicated mobile app.",
     },
     {
       id: 4,
-      question: "How do I contact support?",
+      question: "How can I join the waitlist?",
       answer:
-        "You can reach our support team via the 'Help' section in the app or by emailing support@example.com.",
-      category: "Support",
+        "You can join the waitlist by clicking the 'Join Waitlist' button on our homepage and filling out the short form.",
+    },
+    {
+      id: 5,
+      question: "When will UniHelp launch?",
+      answer:
+        "We are actively building and testing the platform. Our public beta is planned for mid-2026.",
     },
   ];
   return (
@@ -48,7 +50,7 @@ const Faq = () => {
         {Faqs.map((faq) => (
           <div
             key={faq.id}
-            className="w-2xl mb-3 px-3 py-5 border-b-violet-600 border-2 rounded-b-xl border-transparent"
+            className="lg:w-2xl mb-3 px-3 py-5 border-b-violet-600 border-2 rounded-b-xl border-transparent sm:w-full md:w-[600px]"
           >
             <div className="flex justify-between items-center">
               <h1 className="text-xl">{faq.question}</h1>{" "}
@@ -83,5 +85,3 @@ const Faq = () => {
 };
 
 export default Faq;
-
-
