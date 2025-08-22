@@ -25,37 +25,34 @@ const SocialProof = () => {
 
   const testimonials = [
     {
-      name: "Bala Abdulazeez Mayo",
-      role: "Sofware Engineering Science, BUK",
+      name: "Zainab",
+      role: "Perfume seller",
       avatar:
         "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAQMEAgUH/8QALBABAAICAAUDAwMFAQAAAAAAAAECAxEEEjFBUSEycRNhgTNCkSJDUqGxFP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmb18ufqfYFgq+p9k/U8wCwcRkjv6OotE9JBIAAAAAAAAAAAAAAAAiZ1Hqrtffp2B1bJrorm0z1QAAAAAAA6i8x94WxaJhQROp3ANA4pfbsAAAAAAAAAAAFeS3aAc3tufs5AAAAETaK+6QSK5z4o62TXLS3S0A7AAAAXUtuFKazyzsF4iJ3G0gAAAAAAAAiZ1CiZ3O1uSdRCoAAAETPLG56QCvPljHHp17Mlr2vO7TtFrTe1rSgABUXYs81mIvO6/8bPSfWOjzWrhLbiaz26IrQAAACzFPZYorOp9FwJAAAAAAJAFWXq4dZPc5AAAV5/0L/CxXn/Qv8AwgKgAAu4b9WPiVK3hv1Y+JFbQEAABdXpCldj9oOgAAAAAAAU5Pc5d5Y9XAAACLRzVmvmNJAedaOW018IbM+GLxzV97JMTWdTGpBACoNXCU915/CrFhm8xzRMV7tsRERqOiKAAAALqe1Svp7YBIAAAAAAAOMkbhUvmNxpRPXQAAAiZiI3PRmycTP9uNfcGpzalb+6NsNr3t1vafyjdvINk8Pj8SmuDHE71/LFu3k3byD0YgedufM/iXdM+Sk75pmPEg3CvFmjJ21PhYAACaxu2l6vFHpuVgAAAAAAAACvJXvCwBnHV68s77Kc9prjtrroGbPl551HtjoqBQAEAAAATEzE7ifWG3Df6lN946sK7hbcuXXaUVsIjZ6ytpXQOojUJAAAAAAAAAAAETG+rJxlJ+nHLEzG2w0DxRvz8HW3rjnlnx2ZMmG+OdXiY+8dFRWAAAABETM6iN/ADvDE2zV5Y3MLsXB5L6m08sf7bcWKmKNUj8ippXXV2CAAAAAAAAAAAAAAAiYiY1MJAUX4XDf9mvj0VW4Gv7bzHzDYAw/wDhn/OP4THA+cn8Q2gMtOCxVn+qbW/K+mOlPZWI+IdgGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/Z",
 
       quote:
-        "I take coding gigs between lectures and withdraw my earnings to my bank quickly. The people are reliable and payments are clear so it has become a steady side income.",
-      rating: 5,
-      color: "bg-gradient-to-r from-purple-500 to-blue-400",
+        "I just want something better than WhatsApp Business.",
+      color: "bg-gradient-to-r from-purple-500 to-purple-400",
     },
     {
-      name: "Bolaji Olatunde",
-      role: "Business Administration, University of Ilorin",
+      name: "David",
+      role: "Video editor",
       avatar:
         "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAQMEAgUH/8QALBABAAICAAUDAwMFAQAAAAAAAAECAxEEEjFBUSEycRNhgTNCkSJDUqGxFP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmb18ufqfYFgq+p9k/U8wCwcRkjv6OotE9JBIAAAAAAAAAAAAAAAAiZ1Hqrtffp2B1bJrorm0z1QAAAAAAA6i8x94WxaJhQROp3ANA4pfbsAAAAAAAAAAAFeS3aAc3tufs5AAAAETaK+6QSK5z4o62TXLS3S0A7AAAAXUtuFKazyzsF4iJ3G0gAAAAAAAAiZ1CiZ3O1uSdRCoAAAETPLG56QCvPljHHp17Mlr2vO7TtFrTe1rSgABUXYs81mIvO6/8bPSfWOjzWrhLbiaz26IrQAAACzFPZYorOp9FwJAAAAAAJAFWXq4dZPc5AAAV5/0L/CxXn/Qv8AwgKgAAu4b9WPiVK3hv1Y+JFbQEAABdXpCldj9oOgAAAAAAAU5Pc5d5Y9XAAACLRzVmvmNJAedaOW018IbM+GLxzV97JMTWdTGpBACoNXCU915/CrFhm8xzRMV7tsRERqOiKAAAALqe1Svp7YBIAAAAAAAOMkbhUvmNxpRPXQAAAiZiI3PRmycTP9uNfcGpzalb+6NsNr3t1vafyjdvINk8Pj8SmuDHE71/LFu3k3byD0YgedufM/iXdM+Sk75pmPEg3CvFmjJ21PhYAACaxu2l6vFHpuVgAAAAAAAACvJXvCwBnHV68s77Kc9prjtrroGbPl551HtjoqBQAEAAAATEzE7ifWG3Df6lN946sK7hbcuXXaUVsIjZ6ytpXQOojUJAAAAAAAAAAAETG+rJxlJ+nHLEzG2w0DxRvz8HW3rjnlnx2ZMmG+OdXiY+8dFRWAAAABETM6iN/ADvDE2zV5Y3MLsXB5L6m08sf7bcWKmKNUj8ippXXV2CAAAAAAAAAAAAAAAiYiY1MJAUX4XDf9mvj0VW4Gv7bzHzDYAw/wDhn/OP4THA+cn8Q2gMtOCxVn+qbW/K+mOlPZWI+IdgGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/Z",
 
       quote:
-        "I sold my textbooks and a printer in a week. It felt much safer than posting on WhatsApp and the buyer collected from the faculty convenience point without any problems.",
-      rating: 5,
-      color: "bg-gradient-to-r from-purple-500 to-blue-400",
+        "Sales slow down when I’m too busy. I want something that keeps me consistent.",
+      color: "bg-gradient-to-r from-purple-500 to-purple-400",
     },
     {
-      name: "Habeebullah Ajibola",
-      role: "Computer Science, Afe Babalola University",
+      name: "Chinonso",
+      role: "Food plug",
       avatar:
         "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAQMEAgUH/8QALBABAAICAAUDAwMFAQAAAAAAAAECAxEEEjFBUSEycRNhgTNCkSJDUqGxFP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmb18ufqfYFgq+p9k/U8wCwcRkjv6OotE9JBIAAAAAAAAAAAAAAAAiZ1Hqrtffp2B1bJrorm0z1QAAAAAAA6i8x94WxaJhQROp3ANA4pfbsAAAAAAAAAAAFeS3aAc3tufs5AAAAETaK+6QSK5z4o62TXLS3S0A7AAAAXUtuFKazyzsF4iJ3G0gAAAAAAAAiZ1CiZ3O1uSdRCoAAAETPLG56QCvPljHHp17Mlr2vO7TtFrTe1rSgABUXYs81mIvO6/8bPSfWOjzWrhLbiaz26IrQAAACzFPZYorOp9FwJAAAAAAJAFWXq4dZPc5AAAV5/0L/CxXn/Qv8AwgKgAAu4b9WPiVK3hv1Y+JFbQEAABdXpCldj9oOgAAAAAAAU5Pc5d5Y9XAAACLRzVmvmNJAedaOW018IbM+GLxzV97JMTWdTGpBACoNXCU915/CrFhm8xzRMV7tsRERqOiKAAAALqe1Svp7YBIAAAAAAAOMkbhUvmNxpRPXQAAAiZiI3PRmycTP9uNfcGpzalb+6NsNr3t1vafyjdvINk8Pj8SmuDHE71/LFu3k3byD0YgedufM/iXdM+Sk75pmPEg3CvFmjJ21PhYAACaxu2l6vFHpuVgAAAAAAAACvJXvCwBnHV68s77Kc9prjtrroGbPl551HtjoqBQAEAAAATEzE7ifWG3Df6lN946sK7hbcuXXaUVsIjZ6ytpXQOojUJAAAAAAAAAAAETG+rJxlJ+nHLEzG2w0DxRvz8HW3rjnlnx2ZMmG+OdXiY+8dFRWAAAABETM6iN/ADvDE2zV5Y3MLsXB5L6m08sf7bcWKmKNUj8ippXXV2CAAAAAAAAAAAAAAAiYiY1MJAUX4XDf9mvj0VW4Gv7bzHzDYAw/wDhn/OP4THA+cn8Q2gMtOCxVn+qbW/K+mOlPZWI+IdgGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/Z",
 
       quote:
-        "I needed a photographer at short notice. I posted a task and someone replied within an hour. The work was great and I released payment after confirming the photos.",
-      rating: 5,
-      color: "bg-gradient-to-r from-purple-500 to-blue-400",
+        "I will love that I don’t have to check my phone all the time but I’m still making sales.",
+      color: "bg-gradient-to-r from-purple-500 to-purple-400",
     },
 
     {
@@ -65,9 +62,8 @@ const SocialProof = () => {
         "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAQMEAgUH/8QALBABAAICAAUDAwMFAQAAAAAAAAECAxEEEjFBUSEycRNhgTNCkSJDUqGxFP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmb18ufqfYFgq+p9k/U8wCwcRkjv6OotE9JBIAAAAAAAAAAAAAAAAiZ1Hqrtffp2B1bJrorm0z1QAAAAAAA6i8x94WxaJhQROp3ANA4pfbsAAAAAAAAAAAFeS3aAc3tufs5AAAAETaK+6QSK5z4o62TXLS3S0A7AAAAXUtuFKazyzsF4iJ3G0gAAAAAAAAiZ1CiZ3O1uSdRCoAAAETPLG56QCvPljHHp17Mlr2vO7TtFrTe1rSgABUXYs81mIvO6/8bPSfWOjzWrhLbiaz26IrQAAACzFPZYorOp9FwJAAAAAAJAFWXq4dZPc5AAAV5/0L/CxXn/Qv8AwgKgAAu4b9WPiVK3hv1Y+JFbQEAABdXpCldj9oOgAAAAAAAU5Pc5d5Y9XAAACLRzVmvmNJAedaOW018IbM+GLxzV97JMTWdTGpBACoNXCU915/CrFhm8xzRMV7tsRERqOiKAAAALqe1Svp7YBIAAAAAAAOMkbhUvmNxpRPXQAAAiZiI3PRmycTP9uNfcGpzalb+6NsNr3t1vafyjdvINk8Pj8SmuDHE71/LFu3k3byD0YgedufM/iXdM+Sk75pmPEg3CvFmjJ21PhYAACaxu2l6vFHpuVgAAAAAAAACvJXvCwBnHV68s77Kc9prjtrroGbPl551HtjoqBQAEAAAATEzE7ifWG3Df6lN946sK7hbcuXXaUVsIjZ6ytpXQOojUJAAAAAAAAAAAETG+rJxlJ+nHLEzG2w0DxRvz8HW3rjnlnx2ZMmG+OdXiY+8dFRWAAAABETM6iN/ADvDE2zV5Y3MLsXB5L6m08sf7bcWKmKNUj8ippXXV2CAAAAAAAAAAAAAAAiYiY1MJAUX4XDf9mvj0VW4Gv7bzHzDYAw/wDhn/OP4THA+cn8Q2gMtOCxVn+qbW/K+mOlPZWI+IdgGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/Z",
 
       quote:
-        "I sold spare parts and started getting repair jobs from classmates. The verification badge helped build trust and brought repeat customers.",
-      rating: 5,
-      color: "bg-gradient-to-r from-purple-500 to-blue-400",
+        "Too many fake sellers on campus — I just want to buy from someone real.”",
+      color: "bg-gradient-to-r from-purple-500 to-purple-400",
     },
     {
       name: "Ifeoma E.",
@@ -77,8 +73,7 @@ const SocialProof = () => {
 
       quote:
         "I get steady poster and flyer commissions from campus clubs. The Talent section helped me turn my design skills into real bookings.",
-      rating: 5,
-      color: "bg-gradient-to-r from-purple-500 to-blue-400",
+      color: "bg-gradient-to-r from-purple-500 to-purple-400",
     },
 
     {
@@ -89,8 +84,7 @@ const SocialProof = () => {
 
       quote:
         "I posted a task to get groceries and for a quick room clean. I paid into escrow and released payment after the job. It was smooth fair and stress free.",
-      rating: 5,
-      color: "bg-gradient-to-r from-purple-500 to-blue-400",
+      color: "bg-gradient-to-r from-purple-500 to-purple-400",
     },
   ];
 
@@ -136,7 +130,6 @@ const SocialProof = () => {
   return (
     <section
       ref={sectionRef}
-      id="contact"
       className="py-20 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden"
     >
       {/* Background decoration */}
@@ -151,7 +144,7 @@ const SocialProof = () => {
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Students{" "}
-            <span className="bg-gradient-to-r from-purple-500 to-teal-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-500 to-purple-700 bg-clip-text text-transparent">
               Love
             </span>{" "}
             UniHelp
@@ -161,7 +154,7 @@ const SocialProof = () => {
             about their experience.
           </p>
 
-          {/* Overall rating */}
+          {/* Overall rating
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
@@ -173,7 +166,7 @@ const SocialProof = () => {
             </div>
             <span className="text-2xl font-bold text-gray-900">4.9/5</span>
             <span className="text-gray-600">from 500+ students</span>
-          </div>
+          </div> */}
         </div>
 
         {/* Testimonials grid */}
@@ -196,7 +189,7 @@ const SocialProof = () => {
                   <Quote className="w-full h-full text-white" />
                 </div>
 
-                {/* Rating */}
+                {/* Rating
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star
@@ -204,7 +197,7 @@ const SocialProof = () => {
                       className="w-4 h-4 text-yellow-400 fill-current"
                     />
                   ))}
-                </div>
+                </div> */}
 
                 {/* Quote */}
                 <p className="text-gray-700 mb-6 leading-relaxed italic">

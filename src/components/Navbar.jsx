@@ -20,31 +20,31 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           <a
             href="#home"
-            className="text-gray-700 hover:text-violet-600 transition"
+            className="text-gray-700 hover:text-violet-600 transition text-xl font-semibold work-sans"
           >
             Home
           </a>
           <a
             href="#features"
-            className="text-gray-700 hover:text-violet-600 transition"
+            className="text-gray-700 hover:text-violet-600 transition text-xl font-semibold work-sans"
           >
             Features
           </a>
           <a
             href="#about"
-            className="text-gray-700 hover:text-violet-600 transition"
+            className="text-gray-700 hover:text-violet-600 transition text-xl font-semibold work-sans"
           >
             About
           </a>
           <a
             href="#contact"
-            className="text-gray-700 hover:text-violet-600 transition"
+            className="text-gray-700 hover:text-violet-600 transition text-xl font-semibold work-sans"
           >
             Contact
           </a>
           <a
             href="#join-waitlist"
-            className="gradient-purple-blue text-white px-5 py-2 rounded-xl shadow hover:scale-105 transition-transform"
+            className="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 text-white px-5 py-2 rounded-xl shadow hover:scale-105 transition-transform work-sans"
           >
             Join Waitlist
           </a>
@@ -61,30 +61,34 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       {open && (
-        <div className="md:hidden flex flex-col items-center border-y-2 border-violet-100 px-6 pt-2 pb-4 space-y-4">
+        <div className="md:hidden flex flex-col items-center border-y-2 border-violet-100 px-6 pt-2 pb-4 space-y-4 animate-fadeUpIn">
           <a
             href="#home"
-            className="block text-gray-700 hover:text-violet-600 text-center w-full"
+            className="block text-gray-700 hover:text-violet-600 text-center w-full text-lg font-semibold work-sans"
+            onClick={() => setOpen(!open)}
           >
             Home
           </a>
           <a
             href="#features"
-            className="block text-gray-700 hover:text-violet-600 text-center w-full"
+            className="block text-gray-700 hover:text-violet-600 text-center w-full text-lg font-semibold work-sans"
+            onClick={() => setOpen(!open)}
           >
             Features
           </a>
           <a
             href="#about"
-            className="block text-gray-700 hover:text-violet-600 text-center w-full"
+            className="block text-gray-700 hover:text-violet-600 text-center w-full text-lg font-semibold work-sans"
+            onClick={() => setOpen(!open)}
           >
             About
           </a>
           <a
-            href="#contact"
-            className="block text-gray-700 hover:text-violet-600 text-center w-full"
+            href="#join-waitlist"
+            className="gradient-purple-blue text-white px-5 py-2 rounded-xl shadow hover:scale-105 transition-transform work-sans"
+            onClick={() => setOpen(!open)}
           >
-            Contact
+            Join Waitlist
           </a>
         </div>
       )}

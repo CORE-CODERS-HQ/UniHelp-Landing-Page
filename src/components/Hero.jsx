@@ -24,10 +24,10 @@ export default function UniHelpLanding() {
             className="hidden md:block absolute bottom-20 right-20 h-32 w-32 rounded-full bg-teal-400 opacity-30 blur-2xl"
             style={{ animationDelay: "2s" }}
           />
-          <div
+          {/* <div
             className="absolute top-[15%] left-1/2 -translate-x-1/2 h-100 w-100 rounded-full bg-violet-600 opacity-40 blur-lg"
             style={{ animationDelay: "4s" }}
-          />
+          /> */}
           <div className="hidden md:block absolute top-3/4 left-10 h-24 w-24 rounded-full bg-teal-400 opacity-30 blur-xl" />
           <div
             className="hidden md:block absolute bottom-45 right-[45%] h-32 w-32 rounded-full bg-blue-400  opacity-30 blur-2xl"
@@ -61,7 +61,7 @@ export default function UniHelpLanding() {
 
               <h1 className="font-montserrat text-4xl font-bold tracking-tight text-gray-900 md:text-6xl lg:text-7xl">
                 Campus Hustle,{" "}
-                <span className="bg-gradient-to-r from-violet-600 to-blue-500 bg-clip-text text-transparent animate-gradientShift">
+                <span className="bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent animate-gradientShift">
                   Upgraded.
                 </span>
               </h1>
@@ -79,7 +79,7 @@ export default function UniHelpLanding() {
             >
               <Button
                 size="xl"
-                className="gradient-purple-blue text-white hover:scale-105 transition-transform duration-200 px-8 py-3 text-lg font-semibold"
+                className="bg-gradient-to-r from-purple-600 to-purple-800 text-white hover:scale-105 transition-transform duration-200 px-8 py-3 text-lg font-semibold"
               >
                 Join the Waitlist
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -87,7 +87,7 @@ export default function UniHelpLanding() {
               <Button
                 variant="outline"
                 size="xl"
-                className="border-violet-200 text-violet-700 hover:bg-violet-50 px-8 py-3 text-lg bg-transparent"
+                className="border-violet-200 text-violet-700 hover:bg-violet-50 px-8 py-3 text-lg bg-transparent hover:text-purple-700"
               >
                 See How It Works
               </Button>

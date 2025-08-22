@@ -45,12 +45,13 @@ const Faq = () => {
     },
   ];
   return (
-    <section className="px-2 pb-5 mb-14 flex justify-center">
+    <section className="px-4 pb-5 mb-22 flex justify-center lg:px-2">
       <div>
+        <h1 className="text-3xl font-semibold mb-4 lg:text-5xl">Questions?</h1>
         {Faqs.map((faq) => (
           <div
             key={faq.id}
-            className="lg:w-2xl mb-3 px-3 py-5 border-b-violet-600 border-2 rounded-b-xl border-transparent sm:w-full md:w-[600px]"
+            className="lg:w-2xl mb-3 px-3 py-5 border-b-violet-700 border-2 rounded-b-xl border-transparent sm:w-full md:w-[600px]"
           >
             <div className="flex justify-between items-center">
               <h1 className="text-xl">{faq.question}</h1>{" "}

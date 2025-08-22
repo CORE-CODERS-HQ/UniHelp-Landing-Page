@@ -75,7 +75,7 @@ const Problem = () => {
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Why{" "}
-            <span className="bg-gradient-to-r from-purple-500 to-teal-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-500 to-purple-700 bg-clip-text text-transparent">
               UniHelp?
             </span>
           </h2>

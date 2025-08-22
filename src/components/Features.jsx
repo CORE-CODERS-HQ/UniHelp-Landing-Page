@@ -45,7 +45,7 @@ const Features = () => {
       subtitle: "Campus Errands, Simplified",
       description:
         "Need help with hostel chores, buying food from the cafeteria, or a quick campus run? Find reliable peers to handle it for you.",
-      color: "from-purple-600 to-purple-400",
+      color: "from-purple-600 to-purple-800",
       icon: CheckCircle,
       benefits: [
         {
@@ -62,7 +62,7 @@ const Features = () => {
       subtitle: "Buy, Sell & Swap with Ease",
       description:
         "Trade everything students actually need — from textbooks to hostel items, affordable gadgets, and even cafeteria coupons.",
-      color: "from-teal-600 to-teal-400",
+      color: "from-purple-600 to-purple-800",
       icon: ShoppingBag,
       benefits: [
         { icon: Laptop, text: "Buy & sell a wide range of items on campus" },
@@ -77,7 +77,7 @@ const Features = () => {
       subtitle: "Turn Your Skills into Opportunities",
       description:
         "Whether you tutor, design, code, braid hair, or play instruments — showcase your skills and earn from fellow students on campus.",
-      color: "from-blue-600 to-blue-400",
+      color: "from-purple-600 to-purple-800",
       icon: User,
       benefits: [
         { icon: BadgeCheck, text: "Verified profiles build trust instantly" },
@@ -115,7 +115,7 @@ const Features = () => {
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Our 3{" "}
-            <span className="bg-gradient-to-r from-purple-500 via-teal-600 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 bg-clip-text text-transparent">
               Superpowers
             </span>
           </h2>

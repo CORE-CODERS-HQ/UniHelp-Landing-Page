@@ -4,6 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -141,6 +144,17 @@
       transform: translateY(0);
     }
   }
+  @keyframes fadeUpIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   @keyframes scaleIn {
     from {
       opacity: 0;
@@ -156,6 +170,9 @@
   }
   .animate-fadeInUp {
     animation: fadeInUp 0.6s ease-out forwards;
+  }
+  .animate-fadeUpIn {
+    animation: fadeUpIn 0.6s ease-out forwards;
   }
   .animate-scaleIn {
     animation: scaleIn 0.5s ease-out forwards;
@@ -244,4 +261,10 @@
 }
 button {
   cursor: pointer;
+}
+
+.work-sans{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }

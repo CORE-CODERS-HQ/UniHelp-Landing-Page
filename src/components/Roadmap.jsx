@@ -39,8 +39,8 @@ const Roadmap = () => {
       title: "In app Messaging & AI assistance",
       description:
         "Real-time messaging with and file sharing for tasks, marketplace, and talent hub. AI helps you complete purchase when you are away for some time",
-      status: "Coming Q4 2025",
-      color: "bg-purple-500",
+      status: "Planned 2026",
+      color: "bg-purple-600",
     },
     {
       icon: BadgeCheck,
@@ -48,7 +48,7 @@ const Roadmap = () => {
       description:
         "Optional ID verification for trusted helpers, sellers, and talents on campus.",
       status: "Planned 2026",
-      color: "bg-blue-600",
+      color: "bg-purple-600",
     },
     {
       icon: Shield,
@@ -56,23 +56,14 @@ const Roadmap = () => {
       description:
         "Safe in-app payments with deposits, withdrawals, and purchase protection.",
       status: "Planned 2026",
-      color: "bg-purple-500",
-    },
-
-    {
-      icon: Calendar,
-      title: "Campus Events",
-      description:
-        "Discover and promote events, group activities, and social gatherings around campus.",
-      status: "Coming Q1 2026",
-      color: "bg-blue-600",
+      color: "bg-purple-600",
     },
   ];
 
   return (
     <section
       ref={sectionRef}
-      className="py-20 pb-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
+      className="py-20 pb-15 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-100/30 to-transparent rounded-full blur-3xl"></div>
@@ -87,7 +78,7 @@ const Roadmap = () => {
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             We're Just{" "}
-            <span className="bg-gradient-to-r from-purple-500 to-teal-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-500 to-purple-700 bg-clip-text text-transparent">
               Getting Started
             </span>
           </h2>
@@ -100,7 +91,7 @@ const Roadmap = () => {
         {/* Roadmap timeline */}
         <div className="relative">
           {/* Timeline line */}
-          <div className="hidden sm:block absolute left-4 sm:left-1/2 transform sm:-translate-x-px h-full w-0.5 bg-gradient-to-b from-purple-400 via-teal-400 to-blue-400"></div>
+          <div className="hidden sm:block absolute left-4 sm:left-1/2 transform sm:-translate-x-px h-full w-0.5 bg-gradient-to-b from-purple-400 via-purple-600 to-purple-800"></div>
 
           <div className="space-y-4 sm:-space-y-24">
             {roadmapItems.map((item, index) => (
@@ -168,10 +159,10 @@ const Roadmap = () => {
         >
           <div
             id="join-waitlist"
-            className="bg-gradient-to-r from-purple-500 via-teal-600 to-blue-600 rounded-3xl p-8 sm:p-12 text-white text-center"
+            className="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 rounded-3xl p-8 sm:p-12 text-white text-center"
           >
-            <div className="w-16 h-16 bg-white/20 rounded-2xl p-4 mx-auto mb-6">
-              <Lightbulb className="w-full h-full text-white" />
+            <div className="w-16 h-16 bg-white rounded-2xl p-4 mx-auto mb-6">
+              <Lightbulb className="w-full h-full text-purple-500" />
             </div>
 
             <h3 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -194,7 +185,16 @@ const Roadmap = () => {
                 />
                 <button
                   type="submit"
-                  className="absolute right-0 group bg-purple-500 text-white px-4 h-full whitespace-nowrap rounded-2xl font-semibold text-base shadow-lg hover:shadow-xl transform hover:scale-90 hover:translate-x-1 transition-all duration-300 flex items-center justify-center gap-2"
+                  className="absolute right-0 group bg-purple-500 text-white px-4 h-full whitespace-nowrap rounded-2xl font-semibold text-base shadow-lg hover:shadow-xl transform hover:scale-90 hover:translate-x-1 transition-all duration-300 hidden items-center justify-center gap-2 sm:flex"
+                >
+                  Join Waitlist
+                  <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
+              <div className="w-full justify-center flex mb-3 mt-3">
+                <button
+                  type="submit"
+                  className="bg-purple-500 text-white px-18 h-full whitespace-nowrap rounded-2xl font-semibold text-base shadow-lg hover:shadow-xl transform hover:scale-90 hover:translate-x-1 transition-all duration-300 flex items-center justify-center gap-1 py-4 sm:hidden mx-auto w-full xs:w-[65%]"
                 >
                   Join Waitlist
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
